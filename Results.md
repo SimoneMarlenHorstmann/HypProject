@@ -106,4 +106,11 @@ Manual evaluation of hyperparameters shows:
 - MLP does not capture data
 
 # 3) Using Convolutional neural network (CNN)
--- in progess: so far no comparable results (mse way higher than for NN) --
+Info:
+- 64x64 data
+- prediction of radioation and clear sky index (csi)
+  $csi = \frac{rad}{ghi}$ with $ghi$ the global horizontal irradiance, that takes into account the 1) solar constellation and 2) atmospheric transmissivity
+- compare mean squared error loss to the standard deviation of approx. 1.0
+- evaluate hyperparameter (CNN architecture (number of layers and kernel size), number of epochs, learning rate, activation function)
+
+
