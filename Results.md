@@ -39,17 +39,17 @@ Cloud optical depth derived
 
 ### Time evolution of solar irradiance (IR)
 <figure>
-    <img src="/images/ir_timeline.png" width="800px"
+    <img src="/images/ir_timeline.png" width="1000px"
          alt="Albuquerque, New Mexico">
-    <figcaption> Time evolution of solar irradiance.</figcaption>
+    
 </figure>
 
-### Time evolution of clear sky index (CSI)(CSI)
+### Time evolution of clear sky index (CSI)
 
 <figure>
-    <img src="/images/csi_timeline.png" width="800px"
+    <img src="/images/csi_timeline.png" width="1000px"
          alt="Albuquerque, New Mexico">
-    <figcaption> Time evolution of clear sky index (CSI).</figcaption>
+    
 </figure>
 
 -------------------------------------------------------------------------------------------------------------------------------------------
