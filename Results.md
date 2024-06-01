@@ -12,8 +12,11 @@
 ### Input:
 
 Irradiance measured by pyranometer
+![CodDist1](https://github.com/SimoneMarlenHorstmann/HypProject/assets/160620548/1c1c1d48-b3a5-480c-87bb-7805dbd8ebda)
 
---------------------------------------------------------------------------------------------------------------------------------------------
+<img src="/Users/simonehorstmann/Dokumente_Simone/01_Uni/MasterCompScience/Hypatia_project/06Results/toGit/CodDist1.png" width="200" height="100">
+
+-------------------------------------------------------------------------------------------------------------------------------------------
 <h1 id="timeseries">II. Timeseries Analysis</h1>
 # 1) Fitting curve to Radiation data only:
 
