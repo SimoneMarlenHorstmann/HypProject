@@ -1,7 +1,19 @@
-Here is an overview of some of my preliminary results (I used github as Notion is not working currently)
+#### Table of Contents
 
-I used Radiation data for now, but will try the same evaluation using transmissivity in a next step
+- [I. Data Analysis](#data)
+- [II. Timeseries Analysis](#timeseries)
+- [III. Neural Networks](#nn)
+- [IV. Convolutional Neural Networks](#cnn)
 
+
+<h1 id="data">I. Data Analysis</h1>
+
+### Input:
+
+Irradiance measured by pyranometer
+
+----------------------------
+<h1 id="timeseries">II. Timeseries Analysis</h1>
 # 1) Fitting curve to Radiation data only:
 
 ### One-day evolution of radiation
@@ -19,8 +31,8 @@ I used NN and each input consists of the radiation evolution of one day (trying 
 - we need additional features to capture fluctuations
 - Remark: cannot fit continuous fucntion due to split in data (no data between 5pm-6am)
 
+<h1 id="nn">III. Neural Networks</h1>
 
-# 2) Using standard NN - (Multi-layer-perceptron)
 
 ## Started with 10x10 cod images - MLP
 I started by using the 10x10 cod input data. Then I added the time information (day and time) as a first step and in a second step the sun position (altitude and azimuth -> see 'Information'-page) as input features.
@@ -105,6 +117,7 @@ Manual evaluation of hyperparameters shows:
 - including sun position seems to improve prediction
 - MLP does not capture data
 
+<h1 id="cnn">IV. Convolutional Neural Networks</h1>
 # 3) Using Convolutional neural network (CNN)
 Info:
 - 64x64 data
