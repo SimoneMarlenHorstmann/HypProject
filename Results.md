@@ -4,17 +4,25 @@
 - [II. Timeseries Analysis](#timeseries)
 - [III. Neural Networks](#nn)
 - [IV. Convolutional Neural Networks](#cnn)
-
+- [X. Questions](#qa)
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 <h1 id="data">I. Data Analysis</h1>
 
-### Input:
+### Input -  Cloud optical depth (COD)
 
-Irradiance measured by pyranometer
-![CodDist1](https://github.com/SimoneMarlenHorstmann/HypProject/assets/160620548/1c1c1d48-b3a5-480c-87bb-7805dbd8ebda)
+Input data taken from satellite images above Jülich with a resolution of 2km. Cloud optical depth derived by algorithm.
 
-<img src="/Users/simonehorstmann/Dokumente_Simone/01_Uni/MasterCompScience/Hypatia_project/06Results/toGit/CodDist1.png" width="200" height="100">
+Dimensions from 1 to 64 ( 66050 in total) | .
+------|------
+1-dim | 10-dim
+<img src="/images/CodDist1.png" width="500"> | <img src="/images/CodDist10.png" width="500">
+32-dim | 64-dim
+<img src="/images/CodDist1.png" width="500"> | <img src="/images/CodDist10.png" width="500">
+
+### Output - Irradiance measured by pyranometer  
+
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h1 id="timeseries">II. Timeseries Analysis</h1>
@@ -134,5 +142,11 @@ Info:
   $csi = \frac{rad}{ghi}$ with $ghi$ the global horizontal irradiance, that takes into account the 1) solar constellation and 2) atmospheric transmissivity
 - compare mean squared error loss to the standard deviation of approx. 1.0
 - evaluate hyperparameter (CNN architecture (number of layers and kernel size), number of epochs, learning rate, activation function)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<h1 id="qa">IV. Questions</h1>
 
 
