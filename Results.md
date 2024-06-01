@@ -9,30 +9,45 @@
 
 <h1 id="data">I. Data Analysis</h1>
 
-## Input -  Cloud optical depth (COD)
+<img src="/images/heatmap_ani32_100_100.gif" align="right" width="500px"/>
 
-Input data taken from satellite images above Jülich with a resolution of 2km. Cloud optical depth derived by algorithm.
+## I.I Input -  Cloud optical depth (COD) 
 
-Dimensions from 1 to 64 ( 66050 in total) | .
-------|------
-1-dim | 10-dim
-<img src="/images/CodDist1.png" width="500"> | <img src="/images/CodDist10.png" width="500">
-32-dim | 64-dim
-<img src="/images/CodDist1.png" width="500"> | <img src="/images/CodDist10.png" width="500">
+Input data info:
+- from satellite images taken above Jülich
+- with a spatial resolution of 2km and
+- time resultion of 5 min
+- starting 6am to 4.55pm
 
-## Output - Irradiance measured by pyranometer  
+Cloud optical depth derived
+- by ... algorithm
+- combines different channels 
 
-### Irradiance (IR)
+<br/><br/>
+
+<br/><br/>
+
+<br/><br/>
+### Distribution for differnet input dimensions for all 66050 images:
+
+.|.
+---|---
+<img src="/images/CodDist1.png" width="600"> | <img src="/images/CodDist10.png" width="600">
+<img src="/images/CodDist32.png" width="600"> | <img src="/images/CodDist64.png" width="600">
+
+## I.II  Output - Irradiance measured by pyranometer  
+
+### Time evolution of solar irradiance (IR)
 <figure>
-    <img src="/images/ir_timeline.png"
+    <img src="/images/ir_timeline.png" width="800px"
          alt="Albuquerque, New Mexico">
     <figcaption> Time evolution of solar irradiance.</figcaption>
 </figure>
 
-### Clear sky index (CSI)
+### Time evolution of clear sky index (CSI)(CSI)
 
 <figure>
-    <img src="/images/csi_timeline.png"
+    <img src="/images/csi_timeline.png" width="800px"
          alt="Albuquerque, New Mexico">
     <figcaption> Time evolution of clear sky index (CSI).</figcaption>
 </figure>
