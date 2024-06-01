@@ -5,6 +5,7 @@
 - [III. Neural Networks](#nn)
 - [IV. Convolutional Neural Networks](#cnn)
 
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 <h1 id="data">I. Data Analysis</h1>
 
@@ -12,7 +13,7 @@
 
 Irradiance measured by pyranometer
 
-----------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
 <h1 id="timeseries">II. Timeseries Analysis</h1>
 # 1) Fitting curve to Radiation data only:
 
@@ -30,6 +31,8 @@ I used NN and each input consists of the radiation evolution of one day (trying 
 ## Conclusion:
 - we need additional features to capture fluctuations
 - Remark: cannot fit continuous fucntion due to split in data (no data between 5pm-6am)
+
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 <h1 id="nn">III. Neural Networks</h1>
 
@@ -116,6 +119,9 @@ Manual evaluation of hyperparameters shows:
 - using 64x64 data seems to work better
 - including sun position seems to improve prediction
 - MLP does not capture data
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
 
 <h1 id="cnn">IV. Convolutional Neural Networks</h1>
 # 3) Using Convolutional neural network (CNN)
