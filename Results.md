@@ -9,7 +9,7 @@
 
 <h1 id="data">I. Data Analysis</h1>
 
-### Input -  Cloud optical depth (COD)
+## Input -  Cloud optical depth (COD)
 
 Input data taken from satellite images above Jülich with a resolution of 2km. Cloud optical depth derived by algorithm.
 
@@ -20,9 +20,22 @@ Dimensions from 1 to 64 ( 66050 in total) | .
 32-dim | 64-dim
 <img src="/images/CodDist1.png" width="500"> | <img src="/images/CodDist10.png" width="500">
 
-### Output - Irradiance measured by pyranometer  
+## Output - Irradiance measured by pyranometer  
 
+### Irradiance (IR)
+<figure>
+    <img src="/images/ir_timeline.png"
+         alt="Albuquerque, New Mexico">
+    <figcaption> Time evolution of solar irradiance.</figcaption>
+</figure>
 
+### Clear sky index (CSI)
+
+<figure>
+    <img src="/images/csi_timeline.png"
+         alt="Albuquerque, New Mexico">
+    <figcaption> Time evolution of clear sky index (CSI).</figcaption>
+</figure>
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h1 id="timeseries">II. Timeseries Analysis</h1>
