@@ -1,0 +1,7 @@
+Train loss : 0.081
+Valid loss : 0.08433
+Test loss : 0.083 
+Baseline loss : 0.136
+Test vs Baseline loss: 0.61
+Pearson's r: 0.64
+R² score: 0.40
