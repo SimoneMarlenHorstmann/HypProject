@@ -9,6 +9,10 @@
 
 <h1 id="data">I. Data Analysis</h1>
 
+<details open>
+  <summary> <h2 id="III1">II.1 - First Analysis </h2> </summary>
+  
+
 <img src="/images/heatmap_ani32_100_100.gif" align="right" width="500px"/>
 
 ## I.I Input -  Cloud optical depth (COD) 
@@ -78,6 +82,8 @@ I used NN and each input consists of the radiation evolution of one day (trying 
 ## Conclusion:
 - we need additional features to capture fluctuations
 - Remark: cannot fit continuous fucntion due to split in data (no data between 5pm-6am)
+
+</details>
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
