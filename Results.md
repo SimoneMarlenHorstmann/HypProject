@@ -54,6 +54,12 @@ Cloud optical depth derived
 
 &emsp;
 
+### Distributions of IR and CSI
+
+IR data | CSI data
+---|---
+<img src="/images/IrDist32.png" width="600"> | <img src="/images/CsiDist32.png" width="600">
+
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h1 id="timeseries">II. Timeseries Analysis</h1>
 # 1) Fitting curve to Radiation data only:
@@ -165,27 +171,41 @@ Manual evaluation of hyperparameters shows:
 
 ## Overview Analysis of Input output combinations:
 
-**Input** | **Ouput** | loss | Pearson's r score | R2-score
---- | --- | ----
-
-### 1) Input: COD and None -> Output: IR
+**Pearson's Correlation Coefficient**
 
 
-### 2) Input: COD and None -> Output: CSI
+Pearson's correlation coefficient is a statistical measure of the strength and direction of the relationship between two variables. It is denoted by \( r \) and ranges from -1 to 1. The formula for calculating the Pearson correlation coefficient between two variables \( X \) and \( Y \) is:
+
+$ r = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y} $
+
+where:
+- \(\text{Cov}(X, Y)\) is the covariance between \( X \) and \( Y \)
+- \(\sigma_X\) is the standard deviation of \( X \)
+- \(\sigma_Y\) is the standard deviation of \( Y \)
+
+## Interpretation of Pearson's Correlation Coefficient
+- r = +1 : Perfect positive correlation
+- r = -1: Perfect negative correlation
+- r = 0 : No correlation. The variables do not have any linear relationship.
 
 
-### 3) Input: COD and Time -> Output: IR
+| Add. Input         | IR | CSI |
+|---------------|----|-----|
+|None| Pearson's r: 0.39, R² score: 0.15 | Pearson's r: 0.58, R² score: 0.33 |
+|Time| Pearson's r: 0.60, R² score: 0.34 | Pearson's r: 0.58, R² score: 0.33|
+|GHI| Pearson's r: 0.73, R² score: -0.12 | Pearson's r: 0.58, R² score: 0.33 |
 
+| Add. Input         | IR | CSI |
+|---------------|----|-----|
+| None  | <img src="/images/NN5x100/NN_loss_IR_none_10.png" width="600">   |  <img src="/images/NN5x100/NN_loss_CSI_none_10.png" width="600">    |
+| Time  |   <img src="/images/NN5x100/NN_loss_IR_time_10.png" width="600">   |  <img src="/images/NN5x100/NN_loss_CSI_time_10.png" width="600">    |
+| GHI   |   <img src="/images/NN5x100/NN_loss_IR_ghi_10.png" width="600">   |  <img src="/images/NN5x100/NN_loss_CSI_ghi_10.png" width="600">    |
 
-### 4) Input: COD and Time -> Output: CSI
-
-
-### 5) Input: COD and GHI -> Output: IR
-
-
-### 6) Input: COD and GHI -> Output: CSI
-
-
+| Add. Input         | IR | CSI |
+|---------------|----|-----|
+| None  | <img src="/images/NN5x100/NN_TruePred_IR_none_10__sum.png" width="500">   |  <img src="/images/NN5x100/NN_TruePred_CSI_none_10__sum.png" width="500">    |
+| Time  |   <img src="/images/NN5x100/NN_TruePred_IR_time_10__sum.png" width="500">   |  <img src="/images/NN5x100/NN_TruePred_CSI_time_10__sum.png" width="500">    |
+| GHI   |   <img src="/images/NN5x100/NN_TruePred_IR_ghi_10__sum.png" width="500">   |  <img src="/images/NN5x100/NN_TruePred_CSI_ghi_10__sum.png" width="500">    |
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
