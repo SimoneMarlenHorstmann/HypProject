@@ -224,15 +224,15 @@ Pearson's correlation coefficient is a statistical measure of the strength and d
 
 | Add. Input         | IR | CSI |
 |---------------|----|-----|
-| None  | <img src="/images/NN5x100/NN_loss_IR_none_10.png" width="600">   |  <img src="/images/NN5x100/NN_loss_CSI_none_10.png" width="600">    |
-| Time  |   <img src="/images/NN5x100/NN_loss_IR_time_10.png" width="600">   |  <img src="/images/NN5x100/NN_loss_CSI_time_10.png" width="600">    |
-| GHI   |   <img src="/images/NN5x100/NN_loss_IR_ghi_10.png" width="600">   |  <img src="/images/NN5x100/NN_loss_CSI_ghi_10.png" width="600">    |
+| None  | <img src="/images/NN5x100_32/NN_loss_IR_none_32.png" width="600">   |  <img src="/images/NN5x100_32/NN_loss_CSI_none_32.png" width="600">    |
+| Time  |   <img src="/images/NN5x100_32/NN_loss_IR_time_32.png" width="600">   |  <img src="/images/NN5x100_32/NN_loss_CSI_time_32.png" width="600">    |
+| GHI   |   <img src="/images/NN5x100_32/NN_loss_IR_ghi_32.png" width="600">   |  <img src="/images/NN5x100_32/NN_loss_CSI_ghi_32.png" width="600">    |
 
 | Add. Input         | IR | CSI |
 |---------------|----|-----|
-| None  | <img src="/images/NN5x100/NN_TruePred_IR_none_10__sum.png" width="500">   |  <img src="/images/NN5x100/NN_TruePred_CSI_none_10__sum.png" width="500">    |
-| Time  |   <img src="/images/NN5x100/NN_TruePred_IR_time_10__sum.png" width="500">   |  <img src="/images/NN5x100/NN_TruePred_CSI_time_10__sum.png" width="500">    |
-| GHI   |   <img src="/images/NN5x100/NN_TruePred_IR_ghi_10__sum.png" width="500">   |  <img src="/images/NN5x100/NN_TruePred_CSI_ghi_10__sum.png" width="500">    |
+| None  | <img src="/images/NN5x100_32/NN_TruePred_IR_none_32__sum.png" width="500">   |  <img src="/images/NN5x100_32/NN_TruePred_CSI_none_32__sum.png" width="500">    |
+| Time  |   <img src="/images/NN5x100_32/NN_TruePred_IR_time_32__sum.png" width="500">   |  <img src="/images/NN5x100_32/NN_TruePred_CSI_time_32__sum.png" width="500">    |
+| GHI   |   <img src="/images/NN5x100_32/NN_TruePred_IR_ghi_32__sum.png" width="500">   |  <img src="/images/NN5x100_32/NN_TruePred_CSI_ghi_32__sum.png" width="500">    |
 
 
 </details>
