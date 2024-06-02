@@ -1,0 +1,2 @@
+Pearson's r: 0.39
+R² score: 0.15
