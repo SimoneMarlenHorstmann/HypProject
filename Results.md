@@ -265,6 +265,21 @@ Pearson's correlation coefficient is a statistical measure of the strength and d
 | <img src="/images/NN5x100_32/NN_TruePred_CSI_none_32_below0.1_sum.png" width="500"> | <img src="/images/NN5x100_32/ZeroInput_eval_below0.1_CSI_none_32__sum.png" width="500">|
 
 </details>
+
+<details open>
+  <summary> GHI-IR </summary>
+
+| Results plotted for all inputs | ... excluding COD values below 10 |
+|---|---|
+| <img src="/images/NN5x100_32/NN_TruePred_IR_ghi_32__sum.png" width="600"> | <img src="/images/NN5x100_32/NN_TruePred_IR_ghi_32_above10.0_sum.png" width="600"> | 
+
+| Results plotted for COD values below 0.1 | -> distribution of IR corresponding to Zero-images|
+|---|---|
+| <img src="/images/NN5x100_32/NN_TruePred_IR_ghi_32_below0.1_sum.png" width="500"> | <img src="/images/NN5x100_32/ZeroInput_eval_below0.1_IR_ghi_32__sum.png" width="500">|
+
+</details>
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 
