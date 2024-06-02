@@ -83,6 +83,9 @@ I used NN and each input consists of the radiation evolution of one day (trying 
 
 <h1 id="nn">III. Neural Networks</h1>
 
+<details open>
+  <summary> <h2 id="III1">III.1 - First Analysis </h2> </summary>
+  
 
 ## Started with 10x10 cod images - MLP
 I started by using the 10x10 cod input data. Then I added the time information (day and time) as a first step and in a second step the sun position (altitude and azimuth -> see 'Information'-page) as input features.
@@ -167,21 +170,18 @@ Manual evaluation of hyperparameters shows:
 - including sun position seems to improve prediction
 - MLP does not capture data
 
+</details>
 
 
-## Overview Analysis of Input output combinations:
+<details open>
+  <summary> <h2 id="III1">III.2 - Analysis of Input output combinations for small images (10x10) </h2> </summary>
+  
+
 
 **Pearson's Correlation Coefficient**
 
 
-Pearson's correlation coefficient is a statistical measure of the strength and direction of the relationship between two variables. It is denoted by \( r \) and ranges from -1 to 1. The formula for calculating the Pearson correlation coefficient between two variables \( X \) and \( Y \) is:
-
-$ r = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y} $
-
-where:
-- \(\text{Cov}(X, Y)\) is the covariance between \( X \) and \( Y \)
-- \(\sigma_X\) is the standard deviation of \( X \)
-- \(\sigma_Y\) is the standard deviation of \( Y \)
+Pearson's correlation coefficient is a statistical measure of the strength and direction of the relationship between two variables. It is calculated by the fraction of covariance between  X  and Y, and the product of the standard deviations of X and Y respectively
 
 ## Interpretation of Pearson's Correlation Coefficient
 - r = +1 : Perfect positive correlation
@@ -206,6 +206,36 @@ where:
 | None  | <img src="/images/NN5x100/NN_TruePred_IR_none_10__sum.png" width="500">   |  <img src="/images/NN5x100/NN_TruePred_CSI_none_10__sum.png" width="500">    |
 | Time  |   <img src="/images/NN5x100/NN_TruePred_IR_time_10__sum.png" width="500">   |  <img src="/images/NN5x100/NN_TruePred_CSI_time_10__sum.png" width="500">    |
 | GHI   |   <img src="/images/NN5x100/NN_TruePred_IR_ghi_10__sum.png" width="500">   |  <img src="/images/NN5x100/NN_TruePred_CSI_ghi_10__sum.png" width="500">    |
+
+
+</details>
+
+
+
+<details open>
+  <summary> <h2 id="III3">III.3 - Analysis of Input output combinations for medium images (32x32) </h2> </summary>
+
+
+| Add. Input | IR | CSI |
+|------------|----|-----|
+| None       | Test vs Baseline loss: 0.85<br>Pearson's r: 0.45<br>R² score: 0.19 | Test vs Baseline loss: 0.61<br>Pearson's r: 0.64<br>R² score: 0.40 |
+|Time|Test vs Baseline loss: 0.71<br>Pearson's r: 0.56<br>R² score: 0.31 | Test vs Baseline loss: 0.61<br>Pearson's r: 0.63 <br>R² score: 0.40|
+|GHI| Test vs Baseline loss: 1.09<br>Pearson's r: 0.77<br>R² score: -0.08 | Test vs Baseline loss: 0.6<br>Pearson's r: 0.64<br>R² score: 0.40 |
+
+| Add. Input         | IR | CSI |
+|---------------|----|-----|
+| None  | <img src="/images/NN5x100/NN_loss_IR_none_10.png" width="600">   |  <img src="/images/NN5x100/NN_loss_CSI_none_10.png" width="600">    |
+| Time  |   <img src="/images/NN5x100/NN_loss_IR_time_10.png" width="600">   |  <img src="/images/NN5x100/NN_loss_CSI_time_10.png" width="600">    |
+| GHI   |   <img src="/images/NN5x100/NN_loss_IR_ghi_10.png" width="600">   |  <img src="/images/NN5x100/NN_loss_CSI_ghi_10.png" width="600">    |
+
+| Add. Input         | IR | CSI |
+|---------------|----|-----|
+| None  | <img src="/images/NN5x100/NN_TruePred_IR_none_10__sum.png" width="500">   |  <img src="/images/NN5x100/NN_TruePred_CSI_none_10__sum.png" width="500">    |
+| Time  |   <img src="/images/NN5x100/NN_TruePred_IR_time_10__sum.png" width="500">   |  <img src="/images/NN5x100/NN_TruePred_CSI_time_10__sum.png" width="500">    |
+| GHI   |   <img src="/images/NN5x100/NN_TruePred_IR_ghi_10__sum.png" width="500">   |  <img src="/images/NN5x100/NN_TruePred_CSI_ghi_10__sum.png" width="500">    |
+
+
+</details>
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
