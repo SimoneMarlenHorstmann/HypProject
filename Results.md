@@ -9,9 +9,6 @@
 
 <h1 id="data">I. Data Analysis</h1>
 
-<details open>
-  <summary> <h2 id="III1">II.1 - First Analysis </h2> </summary>
-  
 
 <img src="/images/heatmap_ani32_100_100.gif" align="right" width="500px"/>
 
@@ -66,6 +63,11 @@ IR data | CSI data
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h1 id="timeseries">II. Timeseries Analysis</h1>
+
+<details open>
+  <summary> <h2 id="III1">II.1 - First Analysis </h2> </summary>
+  
+
 # 1) Fitting curve to Radiation data only:
 
 ### One-day evolution of radiation
