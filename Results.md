@@ -197,6 +197,7 @@ Pearson's correlation coefficient is a statistical measure of the strength and d
 - r = 0 : No correlation. The variables do not have any linear relationship.
 
 
+
 | Add. Input         | IR | CSI |
 |---------------|----|-----|
 |None| Pearson's r: 0.39, R² score: 0.15 | Pearson's r: 0.58, R² score: 0.33 |
@@ -223,6 +224,13 @@ Pearson's correlation coefficient is a statistical measure of the strength and d
 <details open>
   <summary> <h2 id="III3">III.3 - Analysis of Input output combinations for medium images (32x32) </h2> </summary>
 
+### Training details:
+- Various combination of input and output
+- Input shape : 32 x 32 images
+- Architecture : NN with 5 layers, each 100 hidden neurons
+- Adam Optimizer, learning rate 0.0001,  weight_decay 5e-4, early stopping, 100 epochs, batch size 50
+
+### Training results:
 
 | Add. Input | IR | CSI |
 |------------|----|-----|
@@ -230,12 +238,14 @@ Pearson's correlation coefficient is a statistical measure of the strength and d
 |Time|Test vs Baseline loss: 0.71<br>Pearson's r: 0.56<br>R² score: 0.31 | Test vs Baseline loss: 0.61<br>Pearson's r: 0.63 <br>R² score: 0.40|
 |GHI| Test vs Baseline loss: 1.09<br>Pearson's r: 0.77<br>R² score: -0.08 | Test vs Baseline loss: 0.6<br>Pearson's r: 0.64<br>R² score: 0.40 |
 
+### Training losses:
 | Add. Input         | IR | CSI |
 |---------------|----|-----|
 | None  | <img src="/images/NN5x100_32/NN_loss_IR_none_32.png" width="600">   |  <img src="/images/NN5x100_32/NN_loss_CSI_none_32.png" width="600">    |
 | Time  |   <img src="/images/NN5x100_32/NN_loss_IR_time_32.png" width="600">   |  <img src="/images/NN5x100_32/NN_loss_CSI_time_32.png" width="600">    |
 | GHI   |   <img src="/images/NN5x100_32/NN_loss_IR_ghi_32.png" width="600">   |  <img src="/images/NN5x100_32/NN_loss_CSI_ghi_32.png" width="600">    |
 
+### Visulaization of training results:
 | Add. Input         | IR | CSI |
 |---------------|----|-----|
 | None  | <img src="/images/NN5x100_32/NN_TruePred_IR_none_32__sum.png" width="500">   |  <img src="/images/NN5x100_32/NN_TruePred_CSI_none_32__sum.png" width="500">    |
@@ -245,8 +255,9 @@ Pearson's correlation coefficient is a statistical measure of the strength and d
 
 </details>
 
+<details open>
+  <summary> <h2> III.4 - Further Analysis </h2>  </summary>
 
-### Further Analysis
 
 <details open>
   <summary> None-IR </summary>
