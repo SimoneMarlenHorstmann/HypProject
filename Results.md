@@ -161,6 +161,32 @@ Manual evaluation of hyperparameters shows:
 - including sun position seems to improve prediction
 - MLP does not capture data
 
+
+
+## Overview Analysis of Input output combinations:
+
+**Input** | **Ouput** | loss | Pearson's r score | R2-score
+--- | --- | ----
+
+### 1) Input: COD and None -> Output: IR
+
+
+### 2) Input: COD and None -> Output: CSI
+
+
+### 3) Input: COD and Time -> Output: IR
+
+
+### 4) Input: COD and Time -> Output: CSI
+
+
+### 5) Input: COD and GHI -> Output: IR
+
+
+### 6) Input: COD and GHI -> Output: CSI
+
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 
