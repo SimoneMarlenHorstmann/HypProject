@@ -38,6 +38,10 @@ Cloud optical depth derived
 
 ## I.II  Output - Irradiance measured by pyranometer  
 
+Assumption: use transmission as an output , i.e. the ratio of short wave radiation measured at the ground compared to the incoming short wave radiation at TOA.
+
+
+
 ### Time evolution of solar irradiance (IR)
 <figure>
     <img src="/images/ir_timeline.png" width="1000px"
