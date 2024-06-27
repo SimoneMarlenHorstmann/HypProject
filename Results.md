@@ -47,7 +47,7 @@ $TR = \frac{IR}{TOA}$
 Values range from 0 to approx. 1.2 with little values above 1 due to ....
 
 
-### Time evolution of solar irradiance (IR)
+### Time evolution of solar irradiance (IR), transmissivity (TR) and top of atmosphere irradiance (TOA)
 In the following the time evolution of solar irradiance for 21 days is shown:
 <figure>
     <img src="/images/ir_timeline.png" width="1000px"
@@ -55,16 +55,12 @@ In the following the time evolution of solar irradiance for 21 days is shown:
     
 </figure>
 
-### Time evolution of top of atmosphere irradiance (TR)
-In the following the time evolution of toa irradiance for 21 days is shown:
 <figure>
     <img src="/images/toa_timeline.png" width="1000px"
          alt="Albuquerque, New Mexico">
     
 </figure>
 
-### Time evolution of transmissivity (TR)
-In the following the time evolution of the transmissivity for 21 days is shown:
 <figure>
     <img src="/images/tr_timeline.png" width="1000px"
          alt="Albuquerque, New Mexico">
@@ -73,11 +69,13 @@ In the following the time evolution of the transmissivity for 21 days is shown:
 
 &emsp;
 
-### Distributions of IR and CSI
+### Distributions of IR and TR
+
+We see differenece in the distribution due to the influence of the atmosphere and possible clouds within it, as well as the position of the sun. The latter is incorporated within the TOA irradiance and thus we try to predict the corrected value of transmissivity:
 
 IR data | TR data
 ---|---
-<img src="/images/IrDist32.png" width="600"> | <img src="/images/CsiDist32.png" width="600">
+<img src="/images/IrDist32.png" width="600"> | <img src="/images/TRDist.png" width="600">
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h1 id="timeseries">II. Timeseries Analysis</h1>
@@ -113,16 +111,13 @@ I used NN and each input consists of the radiation evolution of one day (trying 
   <summary> <h2 id="III1">III.1 - First Analysis </h2> </summary>
   
 
-## Started with 10x10 cod images - MLP
-I started by using the 10x10 cod input data. Then I added the time information (day and time) as a first step and in a second step the sun position (altitude and azimuth -> see 'Information'-page) as input features.
+## Started with 10x10 COD images - MLP
+I started by using the 10x10 COD images as input, predicting the solar irradiance (IR). Training was done using Sklearn and as a first try started with a MLP of up to 3 layers ((20,),(50,), (100,),(20,20,), (50,50,), (100,100,), (20,20,20,),  (50,50,50,), (100,100,100,)) Then I added the time information (day and time) as a first step and in a second step the sun position (altitude and azimuth -> see 'Information'-page) as input features.
 I used hyperparametertuning to find the best MLP architecture up to 3 layers (!!! no improvement with further increase of layers)
-
-Mean squared error are:
-10 x 10 (hyperparameter tuning)	
-- 0.474963 cod and sun postion,
-- 0.571241	 cod and time index
-- 0.887235 cod only
-
+I received the follwoing mean squared error values for different combination of input features:
+- cod and sun postion : 0.474963 ,
+- cod and time index : 0.571241
+- cod only : 0.887235 
 
 Random Hyperparametertuning - variation of the following parameters:
 - 'max_iter': [500, 1000], 
@@ -130,14 +125,6 @@ Random Hyperparametertuning - variation of the following parameters:
 - 'learning_rate_init' : [0.01, 0.005, 0.001, 0.0005, 0.0001],
 - 'activation' : ['identity', 'logistic', 'tanh', 'relu'],
 - 'solver' : ['sgd', 'adam']
-
-The results show the MSE on the test data.
-![Results_MLP_10_cod](https://github.com/SimoneMarlenHorstmann/HypProject/assets/160620548/ecebfd18-f57a-4c8e-b866-0a9dbae77fb1)
-![Results_MLP_10_timeind](https://github.com/SimoneMarlenHorstmann/HypProject/assets/160620548/1082743c-8504-450f-9e80-eeb370967cd3)
-![Results_MLP_10_sunpos](https://github.com/SimoneMarlenHorstmann/HypProject/assets/160620548/21d223ff-1031-4dc4-944d-f0118986cad8)
-
-(Training with Sklearn)
-
 
 
 ###  MLP with 1 layer & 1 hidden feature for the 64x64 data
