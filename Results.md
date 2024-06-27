@@ -14,7 +14,7 @@
 
 ## I.I Input -  Cloud optical depth (COD) 
 
-Input data info:
+### Input data info:
 - from satellite images taken above Jülich
 - with a spatial resolution of 2km and
 - time resultion of 5 min
@@ -22,7 +22,8 @@ Input data info:
 
 Cloud optical depth derived
 - by ... algorithm
-- combines different channels 
+- combines different channels
+- 
 
 <br/><br/>
 
@@ -38,9 +39,11 @@ Cloud optical depth derived
 
 ## I.II  Output - Irradiance measured by pyranometer  
 
-Assumption: use transmission as an output , i.e. the ratio of short wave radiation measured at the ground compared to the incoming short wave radiation at TOA.
+Assumption: I use transmissivity (TR) of the atmosphere as target output, i.e. the ratio of short wave radiation measured at the ground (IR) compared to the incoming short wave radiation at the top of the atmosphere (TOA).
 
+$TR = \frac{IR}{TOA}$
 
+Values range from 0 to approx. 1.2 with little values above 1 due to ....
 
 ### Time evolution of solar irradiance (IR)
 <figure>
