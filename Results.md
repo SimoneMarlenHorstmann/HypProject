@@ -40,22 +40,33 @@ Cloud optical depth derived
 ## I.II  Output - Irradiance measured by pyranometer  
 
 Assumption: I use transmissivity (TR) of the atmosphere as target output, i.e. the ratio of short wave radiation measured at the ground (IR) compared to the incoming short wave radiation at the top of the atmosphere (TOA).
+Irradiance is taken from pyranometer measurements, TOA from ERA5 dataset (Link to data: )
 
 $TR = \frac{IR}{TOA}$
 
 Values range from 0 to approx. 1.2 with little values above 1 due to ....
 
+
 ### Time evolution of solar irradiance (IR)
+In the following the time evolution of solar irradiance for 21 days is shown:
 <figure>
     <img src="/images/ir_timeline.png" width="1000px"
          alt="Albuquerque, New Mexico">
     
 </figure>
 
-### Time evolution of clear sky index (CSI)
-
+### Time evolution of top of atmosphere irradiance (TR)
+In the following the time evolution of toa irradiance for 21 days is shown:
 <figure>
-    <img src="/images/csi_timeline.png" width="1000px"
+    <img src="/images/toa_timeline.png" width="1000px"
+         alt="Albuquerque, New Mexico">
+    
+</figure>
+
+### Time evolution of transmissivity (TR)
+In the following the time evolution of the transmissivity for 21 days is shown:
+<figure>
+    <img src="/images/tr_timeline.png" width="1000px"
          alt="Albuquerque, New Mexico">
     
 </figure>
@@ -64,7 +75,7 @@ Values range from 0 to approx. 1.2 with little values above 1 due to ....
 
 ### Distributions of IR and CSI
 
-IR data | CSI data
+IR data | TR data
 ---|---
 <img src="/images/IrDist32.png" width="600"> | <img src="/images/CsiDist32.png" width="600">
 
