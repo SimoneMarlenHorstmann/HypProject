@@ -1,10 +1,19 @@
 #### Table of Contents
 
+- [0. Current steps](#steps)
 - [I. Data Analysis](#data)
 - [II. Timeseries Analysis](#timeseries)
 - [III. Neural Networks](#nn)
 - [IV. Convolutional Neural Networks](#cnn)
 - [X. Questions](#qa)
+
+
+
+-----------
+
+<h1 id="data"> 0. Current Steps </h1> 
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 <h1 id="data">I. Data Analysis</h1>
