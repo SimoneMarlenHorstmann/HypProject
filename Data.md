@@ -18,6 +18,8 @@
 
 
 
+<img src="/images/heatmap_ani32_100_100.gif" align="right" width="600px"/>
+
 
 ## I.I Input -  Cloud optical depth (COD) 
 
@@ -36,23 +38,37 @@ Cloud optical depth derived
 
 <br/><br/>
 
-<br/><br/>
-
-<img src="/images/heatmap_ani32_100_100.gif" align="right" width="600px"/>
 
 
 
+## I.II Output - Irradiance Measurements
 
-## I.II Output -  Irradiance measurements
+### Data Info
+- 10-minute station observations of solar and sunshine for Germany
+- Version: v24.03
+- Publication date: 2024-03-29
+- Avaiable from: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/10_minutes/solar/historical/
 
-<img src="/images/docs/stations_overview.png" align="right" width="900px"/>
+Data used:
+GS_10 : sum of global radiation during the previous 10 minutes
+- Unit = $J/cm^2$
+- Missing_values=- 999 (deleted in preproccessing)
+- Quality control procedure applied:  QN = 3 (automatic control and correction)
 
-But currently only COD above Juelich: 
+Quality check and uncertainty assessment routines are explained in Kaspar et al., 2013. In addition to automated tests that check completeness, temporal and spatial consistency and compare them against statistical thresholds (QualiMet software, Spengler, 2002), an additional manual quality control is carried out.
 
-<img src="/images/docs/Stations_aboveJuelich.png" align="right" width="900px"/>
+<img src="/images/docs/stations_overview.png" width="1020px"/>
 
+
+
+But currently only COD above Juelich:
+
+
+
+<img src="/images/docs/Stations_aboveJuelich.png" width="900px"/>
 
 # I.II Combined Data:
 
-<img src="/images/docs/mean_cod_heatmap_withstations.png" align="right" width="900px"/>
+<br/><br/>
 
+<img src="/images/docs/mean_cod_heatmap_withstations.png" width="900px"/>
