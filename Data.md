@@ -32,26 +32,27 @@ Cloud optical depth derived
 - combines different channels
 - 
 
-
-<img src="/images/heatmap_ani32_100_100.gif" align="right" width="900px"/>
-
-
 <br/><br/>
 
 <br/><br/>
 
 <br/><br/>
+
+<img src="/images/heatmap_ani32_100_100.gif" align="right" width="600px"/>
+
+
+
 
 ## I.II Output -  Irradiance measurements
 
-<img src="/images/stations_overview.png" align="right" width="900px"/>
+<img src="/images/docs/stations_overview.png" align="right" width="900px"/>
 
 But currently only COD above Juelich: 
 
-<img src="/images/Stations_aboveJuelich.png" align="right" width="900px"/>
+<img src="/images/docs/Stations_aboveJuelich.png" align="right" width="900px"/>
 
 
 # I.II Combined Data:
 
-<img src="/images/mean_cod_heatmap_withstations.png" align="right" width="900px"/>
+<img src="/images/docs/mean_cod_heatmap_withstations.png" align="right" width="900px"/>
 
