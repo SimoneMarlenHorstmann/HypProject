@@ -72,3 +72,13 @@ But currently only COD above Juelich:
 <br/><br/>
 
 <img src="/images/docs/mean_cod_heatmap_withstations.png" width="900px"/>
+
+# Data Analysis
+
+
+<img src="/images/docs/StationsOverview_groupbyLat.png" width="900px"/>
+
+<img src="/images/docs/StationsOverview_groupbyLon.png" width="900px"/>
+
+Clustered using kMeans with k=24
+<img src="/images/docs/StationsOverview_byPoximityPlot.png" width="900px"/>
